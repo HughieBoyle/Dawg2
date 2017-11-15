@@ -1,0 +1,45 @@
+{
+	"_id" : 1.0,
+	"Age" : "21",
+	"ContactNumber" : "0879328392",
+	"DOB" : ISODate("1996-06-18T00:00:00.000+01:00"),
+	"Email" : "connordoherty100@gmail.com",
+	"FirstName" : "Connor",
+	"Surname" : "Doherty"
+},
+{
+	"_id" : 2.0,
+	"Age" : "29",
+	"ContactNumber" : "08793627432",
+	"DOB" : ISODate("1988-09-11T00:00:00.000+01:00"),
+	"Email" : "james123@hotmail.com",
+	"FirstName" : "James",
+	"Surname" : "McKenna"
+},
+{
+	"_id" : 3.0,
+	"Age" : "30",
+	"ContactNumber" : "0862534251",
+	"DOB" : ISODate("1987-04-17T00:00:00.000+01:00"),
+	"Email" : "shlong10@yahoo.com",
+	"FirstName" : "Shane",
+	"Surname" : "Long"
+},
+{
+	"_id" : 4.0,
+	"Age" : "25",
+	"ContactNumber" : "0878362519",
+	"DOB" : ISODate("1991-07-03T00:00:00.000+01:00"),
+	"Email" : "duffy91@AOL.com",
+	"FirstName" : "Shane",
+	"Surname" : "Long"
+},
+{
+	"_id" : NumberInt("5"),
+	"Age" : "12",
+	"ContactNumber" : "0987362514",
+	"DOB" : ISODate("2005-06-04T01:00:00.000+01:00"),
+	"Email" : "shughes@eir.ie",
+	"FirstName" : "Shaun",
+	"Surname" : "Hughes"
+},
