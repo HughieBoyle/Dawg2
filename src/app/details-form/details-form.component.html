@@ -1,0 +1,42 @@
+<br>
+<ul class="nav nav-pills">
+  <li [class.active]="option == 'tab_details'"><a (click)="option = 'tab_details'">Personal Details</a></li>
+  <li [class.active]="option == 'tab_quote'"><a (click)="option = 'tab_quote'">Get Your Quote</a></li>
+</ul>
+
+<div [ngSwitch]="option">
+  <div *ngSwitchCase="'tab_details'">
+      <form>
+          <div class="form-group">
+            <label for="firstName">First Name: </label>
+            <input required name="firstName" ngModel (change)="log(firstName)" id="firstName" type="text" class="form-control">
+          </div>
+
+          <div class="form-group">
+              <label for="lastName">Last Name: </label>
+              <input required name="lastName" ngModel (change)="log(lastName)" id="lastName" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input required name="email" ngModel (change)="log(email)" id="email" type="email" class="form-control">
+              </div>
+
+              <div class="form-group">
+                  <label for="phone">Phone Number: </label>
+                  <input required name="phone" ngModel (change)="log(phone)" id="phone" type="tel" class="form-control">
+                </div>
+            <div>
+              <label>Age: </label><br>
+              <input type="radio" value='0'> under 18 <br>
+              <input type="radio" value='18'> 18-25 <br>
+              <input type="radio" value='25'> 25 and above <br>
+            </div>
+              <br>
+          <button name="submitButton" class="btn btn-primary">submit</button>
+        </form>       
+  </div>
+
+  <div *ngSwitchCase="'tab_quote'">Quote View Content</div>
+  <div *ngSwitchDefault><h3>Choose an Option</h3></div>
+</div>
