@@ -1,0 +1,10 @@
+#table-container {
+    background-color: #f8f8f8;
+    position: absolute;
+    width: 40%;
+    top: 40%;
+    left: 55%;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    padding: 10px;
+}
