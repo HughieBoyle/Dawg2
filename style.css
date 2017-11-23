@@ -1,0 +1,95 @@
+body{
+	background-color: black;
+}
+
+#wrapper{
+	margin:0 auto;
+	width:80%;
+	min-width: 850px;
+	background-color: #FFFFFF;
+}
+
+header{
+	background-color: #33FFDD;
+	font-size: 150%; 
+	background-image:url(DAWG.png);
+	background-repeat: no-repeat;
+	padding: 10px 10px 10px 150px;
+	padding-right:50px;
+}
+
+#nav{
+	float:right;
+	width: 150px;
+	letter-spacing: .1em;
+	
+
+}
+
+#nav ul{
+	list-style-type:none;	
+	margin:0;
+	padding:0;
+}
+
+#nav a{
+	text-decoration: none;	
+	border-bottom: 1px solid black;
+	padding:20px;
+	display:block;
+}
+
+
+#content{
+	background-color:white;
+    overflow: auto;
+	padding: 10px 20px 10px 20px;
+}
+
+
+
+#contentright{
+	background-color:white;
+    float:right;
+    overflow: auto;
+	padding: 10px 20px 10px 20px;
+}
+
+
+#nav a:link{ color:white}
+#nav a:visited { color: purple}
+#nav a:hover { 
+	background-color: #869dc7;
+	color: #eaeaea;
+}	
+
+#contentleft{
+	background-color:white;
+	float:left;
+	overflow: auto;
+	padding: 10px 20px 10px 20px
+	}
+
+
+button{
+	float: right;
+	}
+
+
+#floatright{
+	float:right; 
+	margin :10px;
+	font-size: .8em;
+	text-align: center;
+	margin: 10px;
+	
+}
+
+#footer{
+	text-align: center;
+	font-size:80%;
+	padding: 10px;
+	clear: both;
+	
+}
+	
