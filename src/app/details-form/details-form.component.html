@@ -1,0 +1,71 @@
+<div id='form-container'>
+  <ul class="nav nav-tabs">
+    <li [class.active]="option == 'tab_details'"><a (click)="option = 'tab_details'">Personal Details</a></li>
+    <li [class.active]="option == 'tab_quote'"><a (click)="option = 'tab_quote'">Get Your Quote</a></li>
+  </ul>
+
+  <div [ngSwitch]="option">
+    <div *ngSwitchCase="'tab_details'">
+        <form>
+            <div class="form-group">
+              <label for="firstName">First Name: </label>
+              <input required name="firstName" ngModel [(ngModel)]="firstname" (change)="log(firstName)" id="firstName" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name: </label>
+                <input required name="lastName" ngModel [(ngModel)]="lastname" (change)="log(lastName)" id="lastName" type="text" class="form-control">
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email: </label>
+                  <input required name="email" ngModel [(ngModel)]="email" (change)="log(email)" id="email" type="email" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input required name="phone" ngModel [(ngModel)]="tel" (change)="log(phone)" id="phone" type="tel" class="form-control">
+                  </div>
+              <div>
+                <label>Age: </label><br>
+                <input type="radio" name='group' value='0'> under 18 <br>
+                <input type="radio" name='group' value='18'> 18-25 <br>
+                <input type="radio" name='group' value='25'> 25 and above <br>
+              </div>
+
+              <div class ="form-group">
+                <select *ngFor="let illness of illnesses">
+                  <option value="{{illness}}">{{illness}}</option>
+                </select>
+              </div>
+
+                <br>
+            <button name="submitButton" (click)="option = 'tab_quote'"class="btn btn-primary">submit</button>
+          </form>       
+    </div>
+
+    <div *ngSwitchCase="'tab_quote'">
+        <div id='table-container'>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                  <th>Telephone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ firstname }}</td>
+                  <td>{{ lastname }}</td>
+                  <td>{{ email }}</td>
+                  <td>{{ tel }} </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+    <div *ngSwitchDefault><h3>Choose an Option</h3></div>
+  </div>
+</div>
