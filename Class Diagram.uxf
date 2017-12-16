@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>140</y>
+      <w>120</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+Name
+Address
+Age
+Occupation
+Medical History
+--
+getQuote()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>180</y>
+      <w>440</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*
+is given &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;420.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>150</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Quote
+--
+Amount
+Valid For
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
